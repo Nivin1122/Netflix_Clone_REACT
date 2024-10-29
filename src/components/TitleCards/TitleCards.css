@@ -5,12 +5,14 @@
 
 .title-cards h2{
     margin-bottom: 8px;
+    
 }
 
 .card-list{
     display: flex;
     gap: 10px;
     overflow-x: scroll;
+    
 }
 
 .card-list img{
@@ -30,4 +32,35 @@
     position: absolute;
     bottom: 10px;
     right:10px;
+    color: white;
+}
+
+@media (max-width: 800px){
+    .title-cards{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .title-cards h2{
+        font-size: 20px;
+    }
+    .card-list img{
+        width: 200px;
+    }
+    .card-list p{
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 800px){
+    
+    .title-cards h2{
+        font-size: 15px;
+    }
+    .card-list img{
+        width: 165px;
+    }
+    .card-list p{
+        font-size: 10px;
+    }
 }
